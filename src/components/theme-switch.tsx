@@ -4,16 +4,19 @@ import { SwitchProps, useSwitch } from "@heroui/switch";
 import clsx from "clsx";
 import { useTheme } from "@heroui/use-theme";
 
-import { SunFilledIcon, MoonFilledIcon } from "@/components/icons";
+import { PiSunDimFill } from "react-icons/pi";
+import { HiMiniMoon } from "react-icons/hi2";
 
 export interface ThemeSwitchProps {
   className?: string;
   classNames?: SwitchProps["classNames"];
+  color: string;
 }
 
 export const ThemeSwitch: FC<ThemeSwitchProps> = ({
   className,
   classNames,
+  color
 }) => {
   const [isMounted, setIsMounted] = useState(false);
 
@@ -72,9 +75,9 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
         })}
       >
         {isSelected ? (
-          <MoonFilledIcon size={22} />
+          <HiMiniMoon size={22} className={color} />
         ) : (
-          <SunFilledIcon size={22} />
+          <PiSunDimFill size={22} className={color} />
         )}
       </div>
     </Component>
