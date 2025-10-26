@@ -18,8 +18,8 @@ export default function Latest() {
                             <p className="lg:text-2xl text-md">{content}</p>
                         ))}
                     </div>
-                    <span className="flex group-hover:text-white absolute bottom-0 lg:text-transparent w-full z-10 lg:h-42 h-32 bg-gradient-to-b from-transparent to-black lg:text-5xl text-4xl">
-                        <FaAngleDown className="mx-auto mt-auto" />
+                    <span className="flex group-hover:text-white absolute bottom-0 lg:text-transparent w-full z-10 lg:h-42 h-32 bg-gradient-to-b from-transparent dark:to-black to-gray-300 lg:text-5xl text-4xl">
+                        <FaAngleDown className="mx-auto mt-auto text-black dark:text-white" />
                     </span>
                 </div>
             </div>
