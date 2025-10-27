@@ -41,7 +41,7 @@ export default function Navbar() {
             <ThemeSwitch className="ml-auto hover:scale-[1.1]" />
             <LanguageSwitch />
             <a href="https://github.com/MaryanneKaffer" target="_blank" className="active:scale-[0.8] hover:scale-[1.1] transition-all"><GithubIcon className="text-white" /></a>
-            <button className="bg-white hover:scale-[1.05] w-[100px] h-[28px] hover:brightness-125 cursor-pointer rounded-lg lg:text-[16px] text-sm hover:scale-[1.1] duration-500 text-black">
+            <button className="bg-white hover:scale-[1.05] w-[100px] h-[28px] hover:brightness-125 cursor-pointer lg:text-[16px] text-sm hover:scale-[1.1] text-black duration-200">
                 <p>{language === "pt" ? "Contato" : "Contact-me"}</p>
             </button>
         </nav>

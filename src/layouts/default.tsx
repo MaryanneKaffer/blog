@@ -10,7 +10,7 @@ export default function DefaultLayout({
   return (
     <div className="relative flex flex-col ">
       <Navbar />
-      <main className="mx-auto w-full md:px-16 px-6 overflow-x-hidden" id="top">
+      <main className="mx-auto w-full md:px-16 px-6 overflow-hidden" id="top">
         {children}
       </main>
       <footer className="w-full flex items-center justify-center py-3">
