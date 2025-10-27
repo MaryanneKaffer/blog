@@ -3,6 +3,7 @@ export const PostsData = [
         id: 6,
         squarePicture: "/postsPictures/squarePicExample.png",
         fullPicture: "/postsPictures/fullPicExample.png",
+        tags: "React | TailwindCSS",
         en: {
             title: "Example 6",
             resume: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat tortor et justo faucibus aliquet. Vivamus luctus est maximus arcu pretium consectetur. Praesent eget purus at ligula imperdiet placerat id ac est. Maecenas eu mi at ante auctor viverra. Sed consectetur ex ligula, vitae euismod sapien iaculis non. Nam eu tincidunt erat. Pellentesque iaculis semper nunc rhoncus viverra. Nullam accumsan venenatis dolor eget facilisis. Donec quis dui in risus suscipit volutpat. Sed sit amet interdum enim.",
@@ -25,6 +26,7 @@ export const PostsData = [
         id: 5,
         squarePicture: "/postsPictures/squarePicExample.png",
         fullPicture: "/postsPictures/fullPicExample.png",
+        tags: "React | TailwindCSS",
         en: {
             title: "Example 5",
             resume: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat tortor et justo faucibus aliquet. Vivamus luctus est maximus arcu pretium consectetur. Praesent eget purus at ligula imperdiet placerat id ac est. Maecenas eu mi at ante auctor viverra. Sed consectetur ex ligula, vitae euismod sapien iaculis non. Nam eu tincidunt erat. Pellentesque iaculis semper nunc rhoncus viverra. Nullam accumsan venenatis dolor eget facilisis. Donec quis dui in risus suscipit volutpat. Sed sit amet interdum enim.",
@@ -47,6 +49,7 @@ export const PostsData = [
         id: 4,
         squarePicture: "/postsPictures/squarePicExample.png",
         fullPicture: "/postsPictures/fullPicExample.png",
+        tags: "React | TailwindCSS",
         en: {
             title: "Example 4",
             resume: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat tortor et justo faucibus aliquet. Vivamus luctus est maximus arcu pretium consectetur. Praesent eget purus at ligula imperdiet placerat id ac est. Maecenas eu mi at ante auctor viverra. Sed consectetur ex ligula, vitae euismod sapien iaculis non. Nam eu tincidunt erat. Pellentesque iaculis semper nunc rhoncus viverra. Nullam accumsan venenatis dolor eget facilisis. Donec quis dui in risus suscipit volutpat. Sed sit amet interdum enim.",
@@ -69,6 +72,7 @@ export const PostsData = [
         id: 3,
         squarePicture: "/postsPictures/squarePicExample.png",
         fullPicture: "/postsPictures/fullPicExample.png",
+        tags: "React | TailwindCSS",
         en: {
             title: "Example 3",
             resume: "",
@@ -90,6 +94,7 @@ export const PostsData = [
         id: 2,
         squarePicture: "/postsPictures/squarePicExample.png",
         fullPicture: "/postsPictures/fullPicExample.png",
+        tags: "React | TailwindCSS",
         en: {
             title: "Example 2",
             resume: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat tortor et justo faucibus aliquet. Vivamus luctus est maximus arcu pretium consectetur. Praesent eget purus at ligula imperdiet placerat id ac est. Maecenas eu mi at ante auctor viverra. Sed consectetur ex ligula, vitae euismod sapien iaculis non. Nam eu tincidunt erat. Pellentesque iaculis semper nunc rhoncus viverra. Nullam accumsan venenatis dolor eget facilisis. Donec quis dui in risus suscipit volutpat. Sed sit amet interdum enim.",
@@ -112,6 +117,7 @@ export const PostsData = [
         id: 1,
         squarePicture: "/postsPictures/squarePicExample.png",
         fullPicture: "/postsPictures/fullPicExample.png",
+        tags: "React | TailwindCSS",
         en: {
             title: "Example 1",
             resume: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat tortor et justo faucibus aliquet. Vivamus luctus est maximus arcu pretium consectetur. Praesent eget purus at ligula imperdiet placerat id ac est. Maecenas eu mi at ante auctor viverra. Sed consectetur ex ligula, vitae euismod sapien iaculis non. Nam eu tincidunt erat. Pellentesque iaculis semper nunc rhoncus viverra. Nullam accumsan venenatis dolor eget facilisis. Donec quis dui in risus suscipit volutpat. Sed sit amet interdum enim.",
