@@ -7,7 +7,7 @@ export default function IndexPage() {
   const divider = <span className="w-full h-[2px] bg-black dark:bg-white" />
   return (
     <DefaultLayout>
-      <section className="h-full flex flex-col w-full gap-10">
+      <section className="h-full flex flex-col w-full lg:gap-18 gap-12">
         <Cover />
         {divider}
         <Latest />

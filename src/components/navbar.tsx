@@ -8,8 +8,8 @@ export default function Navbar() {
     const { language } = useLanguage()
 
     return (
-        <nav className={`h-[60px] flex text-md dark:bg-black/50 bg-default/75 justify-between fixed w-full z-100 items-center duration-500 flex transition-all backdrop-blur-sm px-16 gap-2`}>
-            <Input className="w-[40%]"
+        <nav className={`h-[60px] flex text-md dark:bg-black/50 bg-default/75 justify-between fixed w-full z-100 items-center duration-500 flex transition-all backdrop-blur-sm lg:px-16 px-6 lg:gap-2 gap-1`}>
+            <Input className="lg:w-[40%] w-[43%]"
                 isClearable
                 classNames={{
                     label: "text-black/50 dark:text-white/90",
@@ -32,7 +32,7 @@ export default function Navbar() {
                         "cursor-text!",
                     ],
                 }}
-                placeholder="Type to search..."
+                placeholder={language === "pt" ? "Procurar..." : "Search..."}
                 radius="full"
                 startContent={
                     <SearchIcon className="text-black/50 mb-0.5 dark:text-white/90 text-slate-400 pointer-events-none shrink-0" />
@@ -41,7 +41,7 @@ export default function Navbar() {
             <ThemeSwitch className="ml-auto hover:scale-[1.1]" />
             <LanguageSwitch />
             <a href="https://github.com/MaryanneKaffer" target="_blank" className="active:scale-[0.8] hover:scale-[1.1] transition-all"><GithubIcon className="text-white" /></a>
-            <button className="bg-white hover:scale-[1.05] w-[100px] h-[28px] hover:brightness-125 cursor-pointer lg:text-[16px] text-sm hover:scale-[1.1] text-black duration-200">
+            <button className="bg-white hover:scale-[1.05] w-[100px] h-[28px] hover:brightness-125 cursor-pointer lg:text-[16px] text-sm hover:scale-[1.1] text-black duration-200 lg:block hidden">
                 <p>{language === "pt" ? "Contato" : "Contact-me"}</p>
             </button>
         </nav>
