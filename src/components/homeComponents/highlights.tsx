@@ -1,5 +1,6 @@
 import { useLanguage } from "@/context/languageContext";
 import { PostsData } from "@/posts/posts"
+import ReadButton from "../readButton";
 
 export default function Highlights() {
     const posts = PostsData
@@ -24,7 +25,7 @@ export default function Highlights() {
                             <p className="lg:text-md text-sm dark:text-white text-black lg:line-clamp-13 line-clamp-11">{best[language].resume}</p>
                             <span className="flex justify-between lg:mt-4 mt-2">
                                 <h2 className="lg:text-md text-sm leading-tight text-gray-500">{best.date}</h2>
-                                <button className="lg:text-md text-sm px-5 bg-default text-white cursor-pointer transition-all lg:opacity-0 group-hover:opacity-100">{language === "en" ? "Read" : "Ler"}</button>
+                                <ReadButton id={best.id} />
                             </span>
                         </span>
                     </div>
@@ -39,7 +40,7 @@ export default function Highlights() {
                                 <p className="lg:text-sm text-[0.7rem] line-clamp-8">{post[language].resume}</p>
                                 <span className="flex justify-between lg:mt-4 mt-2">
                                     <h2 className="lg:text-sm text-[0.7rem] text-sm leading-tight text-gray-500">{post.date}</h2>
-                                    <button className="lg:text-sm text-[0.7rem] px-5 bg-default text-white cursor-pointer transition-all lg:opacity-0 group-hover:opacity-100">{language === "en" ? "Read" : "Ler"}</button>
+                                    <ReadButton id={post.id} />
                                 </span>
                             </div>
                         </div>

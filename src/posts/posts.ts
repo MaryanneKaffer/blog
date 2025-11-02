@@ -1,6 +1,6 @@
 export const PostsData = [
     {
-        id: 6,
+        id: 8,
         squarePicture: "/postsPictures/squarePicExample.png",
         fullPicture: "/postsPictures/fullPicExample.png",
         tags: "React | TailwindCSS",
@@ -25,7 +25,7 @@ export const PostsData = [
         highlighted: 8
     },
     {
-        id: 6,
+        id: 7,
         squarePicture: "/postsPictures/squarePicExample.png",
         fullPicture: "/postsPictures/fullPicExample.png",
         tags: "React | TailwindCSS",
