@@ -11,7 +11,7 @@ export default function ReadPost() {
     return (
         <DefaultLayout>
             <section className="pt-62">
-                <img src={post?.fullPicture} className="w-[100dvw] h-[100dvh] absolute top-0 left-0 -z-10 blur-[4px] object-cover" />
+                <img src={post?.fullPicture} className="w-[100dvw] h-[100dvh] fixed top-0 left-0 -z-10 blur-[4px] object-cover" />
                 <div className="w-full h-full dark:bg-black/85 backdrop-blur-lg bg-default/85 p-5">
                     {post ? (
                         <div className="flex flex-col ">
