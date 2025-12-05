@@ -7,12 +7,12 @@ export const PostsData = [
         date: "07/08/2025",
         en: {
             title: "Poké API",
-            resume: "This project consumes the PokéAPI, a free Pokémon API, to display a list of Pokémon with information such as name, number, and type. It includes a pagination system, allowing smooth and efficient navigation through different pages of Pokémon. The interface is visual and interactive, displaying each Pokémon in a colorful card and highlighting its types. The main goal of this project is to practice API consumption.",
+            resume: "This project consumes the PokéAPI, a free Pokémon API, to display a list of Pokémon with information. The interface is visual and interactive, displaying each Pokémon in a colorful card and highlighting its types. The main goal of this project is to practice API consumption.",
             content: [""],
         },
         pt: {
             title: "Poké API",
-            resume: "Este projeto consome a PokéAPI, uma API gratuita de Pokémon, para exibir uma lista de Pokémon com informações como nome, número e tipo. Ele inclui um sistema de paginação, permitindo navegar entre diferentes páginas de Pokémon de forma leve e eficiente. A interface é visual e interativa, exibindo cada Pokémon em um card colorido e destacando seus tipos. O objetivo principal do projeto é praticar consumo de APIs.",
+            resume: "Este projeto consome a PokéAPI, uma API gratuita de Pokémon, para exibir uma lista de Pokémon com informações como nome, número e tipo. O objetivo principal do projeto é praticar consumo de APIs.",
             content: [""],
         },
         highlighted: 5
@@ -25,12 +25,12 @@ export const PostsData = [
         date: "07/08/2025",
         en: {
             title: "Business API",
-            resume: "This project is an improved version of the original API Test, developed for the personal use of a real individual. It functions as a fullstack order management system, allowing the administration of customers, products, and orders through a responsive interface integrated with an API. The version presented here uses SQLite for learning and development purposes, while the personal production version uses a local SQL database.",
+            resume: "This project is developed for the personal use of a real individual. It functions as a fullstack order management system, allowing the administration of customers, products, and orders through a responsive interface integrated with an API.",
             content: [""],
         },
         pt: {
             title: "API de Negócios",
-            resume: "Este projeto é uma versão melhorada e completa do API Test original, desenvolvida para uso pessoal de uma pessoa real. Ele funciona como um sistema fullstack de gestão de pedidos, permitindo administrar clientes, produtos e pedidos a partir de uma interface responsiva integrada a uma API. A versão apresentada utiliza SQLite para fins de estudo e desenvolvimento, porém a versão usada em produção pessoal utiliza um banco SQL local.",
+            resume: "Este projeto é desenvolvido para uso pessoal de uma pessoa real. Ele funciona como um sistema fullstack de gestão de pedidos, permitindo administrar clientes, produtos e pedidos a partir de uma interface responsiva integrada a uma API.",
             content: [""],
         },
         highlighted: 4
@@ -43,12 +43,12 @@ export const PostsData = [
         date: "03/07/2025",
         en: {
             title: "Portfolio",
-            resume: "This is a personal portfolio developed to showcase skills, experience, and projects. The site features a responsive design, smooth animations using Framer Motion, and support for both light and dark modes. It includes a skills and education section, as well as a project showcase. The main goal is to highlight the ability to create modern, well-structured, and visually appealing interfaces.",
+            resume: "This is a personal portfolio developed to showcase skills, experience, and projects. The site features a responsive design, smooth animations using Framer Motion, and support for both light and dark modes. It includes a skills and education section, as well as a project showcase.",
             content: [""],
         },
         pt: {
             title: "Portfólio",
-            resume: "Este é um portfolio pessoal desenvolvido para apresentar habilidades, experiência e projetos. O site possui um design responsivo, animações suaves com Framer Motion e suporte a modo claro/escuro. Ele inclui uma seção de habilidades e formação, além de uma vitrine de projetos. O objetivo principal é destacar a capacidade de criar interfaces modernas, bem estruturadas e visualmente atraentes.",
+            resume: "Este é um portfolio pessoal desenvolvido para apresentar habilidades, experiência e projetos. O site possui um design responsivo, animações suaves com Framer Motion e suporte a modo claro/escuro. Ele inclui uma seção de habilidades e formação, além de uma vitrine de projetos.",
             content: [""],
         },
         highlighted: 3
@@ -61,12 +61,12 @@ export const PostsData = [
         date: "04/06/2025",
         en: {
             title: "Game Explorer",
-            resume: "This project is a simple web application developed with Next.js, created to practice integration with external APIs and dynamic content rendering. It uses the RAWG.io API to fetch game information, allowing users to explore popular titles, search by name, and view details such as cover images, genres, platforms, ratings, and release dates. The main goal is to learn how to consume APIs and work with environment variables.",
+            resume: "This project is a simple web application created to practice integration with external APIs. It uses the RAWG.io API to fetch game information, allowing users to explore popular titles and view details such as cover images, genres, platforms, ratings, and release dates.",
             content: [""],
         },
         pt: {
             title: "Game Explorer",
-            resume: "Este projeto é uma aplicação web simples desenvolvida em Next.js, criada para praticar integração com APIs externas e renderização dinâmica de conteúdo. Utiliza a API do RAWG.io para buscar informações sobre jogos, permitindo explorar títulos populares, pesquisar por nome e visualizar detalhes como imagem, gêneros, plataformas, avaliações e data de lançamento. O foco principal é aprender a consumir APIs.",
+            resume: "Este projeto é uma aplicação web simples criada para praticar integração com APIs externas. Utiliza a API do RAWG.io para buscar jogos, permitindo explorar títulos populares e visualizar detalhes como imagem, gêneros, plataformas, avaliações e data de lançamento.",
             content: [""],
         },
         highlighted: 2
