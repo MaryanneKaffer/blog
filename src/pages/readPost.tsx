@@ -11,8 +11,26 @@ export default function ReadPost() {
     return (
         <DefaultLayout>
             <section className="pt-62">
-                <img src={post?.fullPicture} className="w-[100dvw] h-[100dvh] fixed top-0 left-0 -z-10 blur-[4px] object-cover" />
-                <div className="w-full h-full dark:bg-black/85 backdrop-blur-lg bg-default/85 p-5">
+                {post?.pictureBg ? (
+                    <img
+                        src={post?.fullPicture}
+                        className={`w-[100dvw] h-[100dvh] fixed top-0 left-0 -z-10 object-cover ${post?.pictureBg && "blur-[4px]"
+                            }`}
+                    />
+                ) : (
+                    <div
+                        className="fixed top-0 left-0 w-[100dvw] h-[100dvh] -z-10 dark:bg-default/50 bg-default"
+                        style={{
+                            WebkitMaskImage: `url(${post?.icon})`,
+                            maskImage: `url(${post?.icon})`,
+                            WebkitMaskRepeat: "repeat",
+                            maskRepeat: "repeat",
+                            WebkitMaskSize: "30px 30px",
+                            maskSize: "30px 30px",
+                        }}
+                    />
+                )}
+                <div className={`w-full h-full ${post?.pictureBg && "dark:bg-black/85 backdrop-blur-lg bg-default/85"} dark:bg-black/95 bg-default p-5`}>
                     {post ? (
                         <div className="flex flex-col ">
                             <h1>{post[language].title}</h1>

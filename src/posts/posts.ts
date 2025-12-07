@@ -93,6 +93,7 @@ export const PostsData = [
         squarePicture: "/postsPictures/windowsXp.png",
         fullPicture: "/postsPictures/windowsXp.png",
         tags: "React | TailwindCSS | React Draggable",
+        pictureBg: true,
         date: "13/03/2025",
         en: {
             title: "Windows XP",
@@ -146,6 +147,7 @@ export const PostsData = [
         fullPicture: "/postsPictures/todoList.png",
         tags: "React | TailwindCSS | Vite",
         date: "17/02/2025",
+        icon: "/postIcons/toDoListIcon.svg",
         en: {
             title: "To-do List",
             resume: "This project is a simple to-do list application created with the goal of learning React and practicing CRUD operations (create, read, update, and delete). It allows users to add tasks, mark them as favorites, and remove them, offering a clean and easy-to-use interface.",
