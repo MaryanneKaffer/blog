@@ -10,7 +10,7 @@ export default function ReadPost() {
 
     return (
         <DefaultLayout>
-            <section className="pt-62">
+            <section className="pt-62 pb-12">
                 {post?.pictureBg ? (
                     <img
                         src={post?.fullPicture}
@@ -30,13 +30,17 @@ export default function ReadPost() {
                         }}
                     />
                 )}
-                <div className={`w-full h-full ${post?.pictureBg && "dark:bg-black/85 backdrop-blur-lg bg-default/85"} dark:bg-black/95 bg-default p-5`}>
+                <div className={`w-full h-full ${post?.pictureBg && "dark:bg-black/85 backdrop-blur-lg bg-default/85"} dark:bg-black/95 bg-default p-8`}>
                     {post ? (
-                        <div className="flex flex-col ">
-                            <h1>{post[language].title}</h1>
+                        <div className="flex flex-col gap-5">
+                            <h1 className="text-center text-3xl">{post[language].title}</h1>
                             <div className="flex flex-col gap-3">
                                 {post[language].content.map((content, i) => (
-                                    <p key={i} className="indent-4">{content}</p>
+                                    <>{
+                                        !content.includes("/postsPictures") ? <p key={i} className="indent-4 text-lg">{content}</p>
+                                            :
+                                            <img src={content} className="mx-12"/>
+                                    }</>
                                 ))}
                             </div>
                         </div>)

@@ -151,7 +151,9 @@ export const PostsData = [
         en: {
             title: "To-do List",
             resume: "This project is a simple to-do list application created with the goal of learning React and practicing CRUD operations (create, read, update, and delete). It allows users to add tasks, mark them as favorites, and remove them, offering a clean and easy-to-use interface.",
-            content: [""],
+            content: ["This was my first React project, created as part of my learning journey in web development. The main goal of this project was to study and practice CRUD concepts (Create, Read, Update, and Delete) in a simple and practical way.",
+                "I built a minimalistic and beginner-friendly To-Do List application where users can add tasks, view their list of tasks, mark them as favorites, and delete items. Through this project, I learned the basics of React, component structure, state management, and TypeScript, as well as how to organize code and styles with Tailwind CSS.",
+                "/postsPictures/todoList.png"],
         },
         pt: {
             title: "To-do List",
