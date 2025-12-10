@@ -4,6 +4,7 @@ export const PostsData = [
         squarePicture: "/postsPictures/squarePicExample.png",
         fullPicture: "/postsPictures/pokeApiFp.png",
         tags: "React | TailwindCSS | Next.js",
+        pictureBg: true,
         date: "07/08/2025",
         en: {
             title: "Poké API",
@@ -23,6 +24,7 @@ export const PostsData = [
         fullPicture: "/postsPictures/businessApiFp.png",
         tags: "React | TailwindCSS | Next.js | API | Prisma",
         date: "07/08/2025",
+        icon: "/postIcons/businessApiIcon.svg",
         en: {
             title: "Business API",
             resume: "This project is developed for the personal use of a real individual. It functions as a fullstack order management system, allowing the administration of customers, products, and orders through a responsive interface integrated with an API.",
@@ -41,6 +43,7 @@ export const PostsData = [
         fullPicture: "/postsPictures/portfolioFp.png",
         tags: "React | TailwindCSS | Vite | Framer Motion",
         date: "03/07/2025",
+        icon: "/postIcons/portfolioIcon.svg",
         en: {
             title: "Portfolio",
             resume: "This is a personal portfolio developed to showcase skills, experience, and projects. The site features a responsive design, smooth animations using Framer Motion, and support for both light and dark modes. It includes a skills and education section, as well as a project showcase.",
@@ -59,6 +62,7 @@ export const PostsData = [
         fullPicture: "/postsPictures/gameExplorer.png",
         tags: "React | TailwindCSS | Next.js | API",
         date: "04/06/2025",
+        icon: "/postIcons/gameExplorerIcon.svg",
         en: {
             title: "Game Explorer",
             resume: "This project is a simple web application created to practice integration with external APIs. It uses the RAWG.io API to fetch game information, allowing users to explore popular titles and view details such as cover images, genres, platforms, ratings, and release dates.",
@@ -77,6 +81,7 @@ export const PostsData = [
         fullPicture: "/postsPictures/apiTest.png",
         tags: "React | TailwindCSS | Next.js | API | Prisma",
         date: "12/05/2025",
+        icon: "/postIcons/apiIcon.svg",
         en: {
             title: "API test",
             resume: "A simple API test focused on learning how to build an API and integrate it into a bag ordering system project. It was developed for personal use by a real individual and is not optimized for mobile devices.",
@@ -113,6 +118,7 @@ export const PostsData = [
         fullPicture: "/postsPictures/cocacolaClone.png",
         tags: "React | TailwindCSS | Vite",
         date: "04/03/2025",
+        icon: "/postIcons/cocacolaIcon.svg",
         en: {
             title: "Coca Cola Clone",
             resume: "The purpose of this project is to practice web development by exploring interface design (UI/UX) and creating responsive layouts. The clone replicates the appearance and visual experience of the brand's official website. The main focus is to practice replicating real interfaces, improve design skills, and enhance performance understanding using Lighthouse.",
@@ -130,6 +136,7 @@ export const PostsData = [
         fullPicture: "/postsPictures/gamehub.png",
         tags: "React | TailwindCSS | React Hooks | Vite",
         date: "26/02/2025",
+        icon: "/postIcons/gamehubIcon.svg",
         en: {
             title: "Game Hub",
             resume: "This project is a simple GameHub developed for educational purposes. It was created to practice web development fundamentals, explore component structuring, and learn how to use React Hooks. The GameHub brings together three interactive games and offers a friendly, responsive interface with smooth interactions.",
