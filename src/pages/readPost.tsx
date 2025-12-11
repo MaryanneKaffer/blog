@@ -30,24 +30,35 @@ export default function ReadPost() {
                         }}
                     />
                 )}
-                <div className={`w-full h-full ${post?.pictureBg && "dark:bg-black/85 backdrop-blur-lg bg-default/85"} dark:bg-black/95 bg-default p-8`}>
-                    {post ? (
+                <div className={`w-full h-full ${post?.pictureBg && "dark:bg-black/85 backdrop-blur-lg bg-default/85"} dark:bg-black/95 bg-default p-8 flex gap-5`}>
+                    {post ? (<>
                         <div className="flex flex-col gap-5">
                             <h1 className="text-center text-3xl">{post[language].title}</h1>
-                            <div className="flex flex-col gap-3">
+                            <div className="flex flex-col gap-5">
                                 {post[language].content.map((content, i) => (
                                     <>{
                                         !content.includes("/postsPictures") ? <p key={i} className="indent-4 text-lg">{content}</p>
                                             :
-                                            <img src={content} className="mx-12"/>
+                                            <img src={content} />
                                     }</>
                                 ))}
                             </div>
-                        </div>)
+                        </div>
+                        <div className="sticky top-32 left-0">
+                            <a href={post.links?.preview} target="_blank" rel="noopener noreferrer">
+                                <button>
+                                    {language === "pt" ? "Visitar" : "Visit"}
+                                </button>
+                            </a>
+                            <a href={post.links?.github} target="_blank" rel="noopener noreferrer">
+                                <button>Github</button>
+                            </a>
+                        </div>
+                    </>)
                         : <h1 className="h-[80dvh]">This post doesn't exist...</h1>
                     }
                 </div>
             </section>
-        </DefaultLayout>
+        </DefaultLayout >
     )
 }

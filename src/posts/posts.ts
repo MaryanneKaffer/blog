@@ -133,14 +133,19 @@ export const PostsData = [
     {
         id: 2,
         squarePicture: "/postsPictures/squarePicExample.png",
-        fullPicture: "/postsPictures/gamehub.png",
+        fullPicture: "/postsPictures/gamehub/gamehubHomeFull.png",
         tags: "React | TailwindCSS | React Hooks | Vite",
         date: "26/02/2025",
         icon: "/postIcons/gamehubIcon.svg",
+        links: { github: "https://github.com/MaryanneKaffer/gamehub", preview: "https://gamehub-mu-azure.vercel.app" },
         en: {
             title: "Game Hub",
             resume: "This project is a simple GameHub developed for educational purposes. It was created to practice web development fundamentals, explore component structuring, and learn how to use React Hooks. The GameHub brings together three interactive games and offers a friendly, responsive interface with smooth interactions.",
-            content: [""],
+            content: ["When I first started learning React, I wanted to build something that felt fun, interactive, and challenging enough to push me outside of the basics. That’s how I ended up creating one of my first projects: a simple GameHub featuring four small games, each built to help me practice different concepts of React.",
+                "The goal was to learn how to structure components, manage state, and reuse logic across different parts of the app. I also wanted to explore how React handles user interaction, event listeners, and conditional rendering, all in a real, hands-on project.",
+                "/postsPictures/gamehub/gamehubHomeFull.png",
+                ""
+            ],
         },
         pt: {
             title: "Game Hub",
