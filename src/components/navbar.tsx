@@ -8,7 +8,7 @@ export default function Navbar() {
     const { language } = useLanguage()
 
     return (
-        <nav className={`h-[60px] flex text-md dark:bg-black/50 bg-default/75 justify-between fixed w-full z-100 items-center duration-500 flex transition-all backdrop-blur-sm lg:px-16 px-6 lg:gap-2 gap-1`}>
+        <nav className={`h-[50px] flex text-md dark:bg-black/50 bg-default/75 justify-between fixed w-full z-100 items-center duration-500 flex transition-all backdrop-blur-sm lg:px-52 px-6 lg:gap-2 gap-1`}>
             <Search />
             <ThemeSwitch className="ml-auto hover:scale-[1.1]" />
             <LanguageSwitch />

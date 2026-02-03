@@ -24,7 +24,7 @@ export default function DefaultLayout({
         </motion.div>
       </AuroraBackground>
       <Navbar />
-      <main className="mx-auto w-full md:px-22 px-6 overflow-hidden backdrop-blur-md" id="top">
+      <main className="mx-auto w-full md:px-52 px-6 overflow-hidden dark:backdrop-blur-lg" id="top">
         {children}
       </main>
       <footer className="w-full flex items-center justify-center py-3">
