@@ -67,9 +67,9 @@ export default function Search() {
                     < SearchIcon className="text-black/50 mb-0.5 dark:text-white/90 text-slate-400 pointer-events-none shrink-0" />
                 }
             />
-            {query && (<div className="w-full h-fit p-3 dark:bg-black/75 bg-default/75 transition-all backdrop-blur-sm absolute top-12.5 flex flex-col z-10">
+            {query && (<div className="w-full h-fit p-3 dark:bg-black/75 bg-default/75 transition-all backdrop-blur-lg absolute top-11 flex flex-col z-10">
                 {results.length > 0 ? (results.map((post) => (
-                    <button className="flex gap-2 transition-all hover:bg-default/40 p-2 cursor-pointer text-left" onClick={() => handleClick(post.id)}>
+                    <button className="flex gap-2 transition-all hover:bg-default/40 p-2 text-left" onClick={() => handleClick(post.id)}>
                         <img src={post.fullPicture} className="lg:h-12 h-10 object-fit lg:w-22 w-18" />
                         <span className="flex flex-col">
                             <h1 className="lg:text-sm text-[0.8rem]">{post[language].title}</h1>

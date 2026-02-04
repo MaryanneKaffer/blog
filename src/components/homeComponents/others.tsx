@@ -8,7 +8,7 @@ export default function Others() {
     const { language } = useLanguage()
 
     return (
-        <section className="w-[100%] flex flex-col gap-7">
+        <section className="w-[100%] flex flex-col gap-7 px-3 dark:bg-black/20 bg-default/40 backdrop-blur-md">
             <h1 className="lg:text-4xl text-3xl bg-clip-text text-transparent bg-gradient-to-br from-blue-600 to-purple-800 hover:brightness-125 transition-all">{language === "en" ? "Other posts" : "Outros posts"}</h1>
             <div className="flex flex-wrap w-full relative lg:justify-normal justify-between">
                 {posts.map((post, i) => (

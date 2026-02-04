@@ -73,9 +73,9 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
         })}
       >
         {isSelected ? (
-          <HiMiniMoon size={20} className="text-white"/>
+          <HiMiniMoon size={22} className="dark:text-white text-black" />
         ) : (
-          <PiSunDimFill size={20} className="text-white"/>
+          <PiSunDimFill size={22} className="dark:text-white text-black" />
         )}
       </div>
     </Component>
