@@ -1,23 +1,18 @@
 import { Input } from "@heroui/input";
 import { SearchIcon } from "./icons";
 import { useLanguage } from "@/context/languageContext";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { PostsData } from "@/posts/posts"
-import { useNavigate } from "react-router-dom";
 
-type Post = typeof PostsData[number]
+export type Post = typeof PostsData[number]
+type SearchProps = {
+    query: string;
+    setQuery: React.Dispatch<React.SetStateAction<string>>;
+    setResults: React.Dispatch<React.SetStateAction<Post[]>>;
+};
 
-export default function Search() {
+export default function Search({ query, setQuery, setResults, }: SearchProps) {
     const { language } = useLanguage()
-    const [query, setQuery] = useState("")
-    const [results, setResults] = useState<Post[]>([]);
-    const navigate = useNavigate();
-
-    const handleClick = (id: number) => {
-        setQuery("")
-        setResults([]);
-        navigate(`/post/${id}`);
-    };
 
     useEffect(() => {
         if (!query.trim()) {
@@ -67,18 +62,6 @@ export default function Search() {
                     < SearchIcon className="text-black/50 mb-0.5 dark:text-white/90 text-slate-400 pointer-events-none shrink-0" />
                 }
             />
-            {query && (<div className="w-full h-fit p-3 dark:bg-black/75 bg-default/75 transition-all backdrop-blur-lg absolute top-11 flex flex-col z-10">
-                {results.length > 0 ? (results.map((post) => (
-                    <button className="flex gap-2 transition-all hover:bg-default/40 p-2 text-left" onClick={() => handleClick(post.id)}>
-                        <img src={post.fullPicture} className="lg:h-12 h-10 object-fit lg:w-22 w-18" />
-                        <span className="flex flex-col">
-                            <h1 className="lg:text-sm text-[0.8rem]">{post[language].title}</h1>
-                            <h1 className="lg:text-sm text-[0.8rem] text-gray-500">{post.tags}</h1>
-                        </span>
-                    </button>
-                )))
-                    : results.length === 0 && <p>{language === "pt" ? "Nada encontrado..." : "Nothing found..."}</p>}
-            </div>)}
         </div >
     )
 }
