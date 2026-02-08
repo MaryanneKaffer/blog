@@ -45,16 +45,15 @@ export const PostsData = [
         date: "03/07/2025",
         icon: "/postIcons/portfolioIcon.svg",
         en: {
-            title: "Portfolio",
+            title: "Old Portfolio",
             resume: "This is a personal portfolio developed to showcase skills, experience, and projects. The site features a responsive design, smooth animations using Framer Motion, and support for both light and dark modes. It includes a skills and education section, as well as a project showcase.",
             content: [""],
         },
         pt: {
-            title: "Portfólio",
+            title: "Portfólio Antigo",
             resume: "Este é um portfolio pessoal desenvolvido para apresentar habilidades, experiência e projetos. O site possui um design responsivo, animações suaves com Framer Motion e suporte a modo claro/escuro. Ele inclui uma seção de habilidades e formação, além de uma vitrine de projetos.",
             content: [""],
         },
-        highlighted: 3
     },
     {
         id: 6,
@@ -129,6 +128,7 @@ export const PostsData = [
             resume: "O objetivo deste projeto é praticar desenvolvimento web, explorando design de interface (UI/UX) e criação de layouts responsivos. O clone replica a aparência e a experiência visual do site oficial da marca. O foco principal é praticar a replicação de interfaces reais, aprimorar habilidades de design e melhorar a compreensão de desempenho com o Lighthouse.",
             content: [""],
         },
+        highlighted: 3
     },
     {
         id: 2,

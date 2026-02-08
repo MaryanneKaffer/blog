@@ -33,7 +33,7 @@ export default function Navbar() {
                 </button>
             </div>
             {query && (<motion.div initial={{ opacity: 0.0 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.2, ease: "easeInOut", }}
-                className="lg:w-[40%] w-[80%] h-fit p-3 dark:black/50 bg-default/15 transition-all backdrop-blur-sm flex flex-col z-10 ">
+                className="lg:w-[40%] w-[80%] h-fit p-3 dark:bg-black/60 bg-default/60 transition-all backdrop-blur-md flex flex-col z-10 ">
                 {results.length > 0 ? (results.map((post) => (
                     <button className="flex gap-2 transition-all hover:bg-default/40 p-2 text-left" onClick={() => handleClick(post.id)}>
                         <img src={post.fullPicture} className="lg:h-12 h-10 object-fit lg:w-22 w-18" />

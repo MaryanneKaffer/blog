@@ -30,7 +30,7 @@ export default function ReadPost() {
                         }}
                     />
                 )}
-                <div className={`w-full h-full ${post?.pictureBg && "dark:bg-black/85 backdrop-blur-lg bg-default/85"} dark:bg-black/95 bg-default p-8 flex gap-5`}>
+                <div className={`w-full h-full min-h-[60dvh] ${post?.pictureBg && "dark:bg-black/85 backdrop-blur-lg bg-default/85"} dark:bg-black/95 bg-default p-8 flex gap-8`}>
                     {post ? (<>
                         <div className="flex flex-col gap-5">
                             <h1 className="text-center text-3xl">{post[language].title}</h1>
@@ -44,11 +44,9 @@ export default function ReadPost() {
                                 ))}
                             </div>
                         </div>
-                        <div className="sticky top-32 left-0">
+                        <div className="flex flex-col gap-3 sticky top-[80px] left-0 h-52 border-l p-4 w-[30%]">
                             <a href={post.links?.preview} target="_blank" rel="noopener noreferrer">
-                                <button>
-                                    {language === "pt" ? "Visitar" : "Visit"}
-                                </button>
+                                {language === "pt" ? "Visitar" : "Visit"}
                             </a>
                             <a href={post.links?.github} target="_blank" rel="noopener noreferrer">
                                 <button>Github</button>
